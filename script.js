@@ -281,7 +281,7 @@ function LanguageMenu(Init) {//To switch to the language menu (if Init True, Tra
       i +
       "," +
       Init +
-      ')">' +
+      ')"  class="menuButton" >' +
       language[i][1] +
       "</button>";
   document.getElementById("mainSection").innerHTML = theMenu;
