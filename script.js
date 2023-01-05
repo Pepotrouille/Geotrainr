@@ -347,10 +347,10 @@ function Enter() {
 
   let countryIndex = -1;
   for (let j = 0; j < language[currentLanguageIndex][2].length; j++) {
-    if (language[currentLanguageIndex][2][j] == theInput) countryIndex = j;
+    if (language[currentLanguageIndex][2][j].toLowerCase() == theInput.toLowerCase()) countryIndex = j;
   }
   if (countryIndex != -1) {
-    currentList = AddInSortedList(currentList, theInput);
+    currentList = AddInSortedList(currentList, language[currentLanguageIndex][2][countryIndex]);
 
     document.getElementById("playerAnswerList").innerHTML = "";
     for (let i = 0; i < currentList.length; i++) {
@@ -381,7 +381,6 @@ function Validate() {//To print the answers and call Correction()
   document.getElementById("theGoodAnswerList").innerHTML = "";
 
   let j = 0;
-  console.log(winningList);
   for (let i = 0; i < language[currentLanguageIndex][2].length; i++) {
     if (winningList[j] == language[0][2][i]) {
       translatedWinningList = AddInSortedList(
