@@ -3,7 +3,7 @@ question
 English
 Which country has a yellow European sign?
 French
-Quel pays à un panneau européen jaune ?
+Quel pays utilise des panneaux jaunes de style européen ?
 question
 answer
 Finland
@@ -85,12 +85,17 @@ plateRedStripe
 leftDriving
 question
 English
-Which
+Which European Countries have left Driving?
 French
-Quel
+Quel pays Européen conduit à gauche ?
 question
 answer
 United Kingdom
+Jersey
+Guernsey
+Malta
+Cyprus
+Ireland
 answer
 leftDriving
 
