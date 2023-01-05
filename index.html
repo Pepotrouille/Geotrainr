@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoTrainR</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body id="main">
+    <header><img src="GeoTrainR.png"></header>
+    <section id="mainSection">
+        <div id="HTMLQuestion" class="HTMLQuestion">placeholder here</div> 
+        <div id="HTMLAnswer">
+            <input list="propositions" type="text" id="inputAnswer">
+            <datalist id="propositions">
+            </datalist>
+        </div>
+        <div id="playerAnswer">
+        </div>
+        <div style="overflow-x: auto;">
+            <table border="1">
+                <tbody id="playerAnswerList">
+                </tbody>
+            </table>
+            <table border="1">
+                <tbody id="theGoodAnswerList">
+                </tbody>
+            </table>
+            <br><br>
+            <button type="button" onclick="Validate()" id="validate">Validate</button>
+        </div>
+        
+    </section>
+    <footer id="theFooter">
+        <button type="button" onclick="Restart()" id="newQuestion">New Question</button>
+        <button type="button" onclick="DeleteAll()" id="deleteCurrent">Delete Current</button>
+        <button type="button" onclick="LanguageMenu(false)" id="changeLanguage">Change Language</button>
+    </footer>
+
+</body>

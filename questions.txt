@@ -1,0 +1,109 @@
+yellowSign
+question
+English
+Which country has a yellow European sign?
+French
+Quel pays à un panneau européen jaune ?
+question
+answer
+Finland
+Greece
+Iceland
+North Macedonia
+Poland
+Sweden
+answer
+yellowSign
+
+yellowPlateBlueStripe
+question
+English
+Which country can have cars with a yellow plate with a left blue stripe?
+French
+Quel pays peut avoir des voitures avec une plaque d'immatriculation jaune ainsi qu'une bande bleue à gauche ?
+question
+answer
+Denmark
+France
+Luxembourg
+Netherlands
+answer
+yellowPlateBlueStripe
+
+doubleBlueStripes
+question
+English
+Which country can have cars with two blue stripes on the sides?
+French
+Quel pays peut avoir des voitures avec une plaque d'immatriculation avec deux bandes bleues ?
+question
+answer
+Albania
+France
+Italy
+answer
+doubleBlueStripes
+
+plateRedWriting
+question
+English
+Which country can have cars with red writing?
+French
+Quel pays peut avoir des voitures avec une plaque d'immatriculation avec l'écriture en rouge ?
+question
+answer
+Belgium
+answer
+plateRedWriting
+
+plateRedStripe
+question
+English
+Which country can have cars with one red stripe on the left?
+French
+Quel pays peut avoir des voitures avec une plaque d'immatriculation une bande ruge à gauche ?
+question
+answer
+Albania
+Isle of Man
+answer
+plateRedStripe
+
+plateRedStripe
+question
+English
+Which (european) country can have a rift in the google car's camera?
+French
+Quel pays peut avoir une faille dans la caméra de la google car ?
+question
+answer
+Albania
+Montenegro
+answer
+plateRedStripe
+
+leftDriving
+question
+English
+Which
+French
+Quel
+question
+answer
+United Kingdom
+answer
+leftDriving
+
+languageItalian
+question
+English
+Which country speaks (at least partially) Italian?
+French
+Quel pays parle (au moins partiellement) Italien ?
+question
+answer
+Switzerland
+Italy
+San Marino
+answer
+languageItalian
