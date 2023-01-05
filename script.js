@@ -379,7 +379,7 @@ function Back(Init) {//The Back Button
 function Validate() {//To print the answers and call Correction()
 
   document.getElementById("theGoodAnswerList").innerHTML = "";
-
+  translatedWinningList = [];
   let j = 0;
   for (let i = 0; i < language[currentLanguageIndex][2].length; i++) {
     if (winningList[j] == language[0][2][i]) {
@@ -409,6 +409,7 @@ function Correction() {//To highlight the good and bad answers
   if (currentList || currentList == []) {
     let i = 0;
     let j = 0;
+    console.log(currentList + ", " + translatedWinningList)
     for (; i < currentList.length || j < translatedWinningList.length; ) {
       console.log(currentList[i] + " " + translatedWinningList[j]);
       if (currentList[i] == translatedWinningList[j]) {
@@ -438,7 +439,7 @@ function Correction() {//To highlight the good and bad answers
           "</p>";
         i++;
         j++;
-      } else if (currentList[i] < winningList[j]) {
+      } else if (currentList[i] < translatedWinningList[j]) {
         document.getElementById(currentList[i]).innerHTML =
           '<p style="color:' + badAnswerColor + ';">' + currentList[i] + "</p>";
         document.getElementById(currentList[i]).innerHTML =
@@ -448,7 +449,7 @@ function Correction() {//To highlight the good and bad answers
           currentList[i] +
           "</p>";
         i++;
-      } else if (currentList[i] > winningList[j]) {
+      } else if (currentList[i] > translatedWinningList[j]) {
         document.getElementById("Good" + winningList[j]).innerHTML =
           '<p style="color:' +
           badAnswerColor +
@@ -494,11 +495,7 @@ function Correction() {//To highlight the good and bad answers
             currentList[i] +
             "</p>";
         }
-      } else {
-        console.log("Problemo");
-        i = currentList.length;
-        j = translatedWinningList.length;
-      }
+      } 
     }
   }
 }

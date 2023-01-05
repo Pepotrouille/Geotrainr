@@ -61,7 +61,7 @@ question
 English
 Which country can have cars with one red stripe on the left?
 French
-Quel pays peut avoir des voitures avec une plaque d'immatriculation une bande ruge à gauche ?
+Quel pays peut avoir des voitures avec une plaque d'immatriculation une bande rouge à gauche ?
 question
 answer
 Albania
