@@ -202,7 +202,7 @@ Switzerland
 answer
 picture
 picture
-mowcamera
+lowcamera
 
 chevronbgblackwhitearrow
 question
@@ -367,5 +367,6 @@ Sweden
 answer
 picture
 chevronsBGBlueYellowArrow1.png
+chevronsBGBlueYellowArrow1.JPG
 picture
 chevronbgblueyellowarrow

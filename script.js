@@ -112,7 +112,6 @@ let dropDownTB = [];
 Initialization();
 
 document.addEventListener("DOMContentLoaded", function () {
-  //InitLanguage();
   InitQuestion();
   setMyKeyDownListener();
   InitDropDown();
