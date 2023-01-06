@@ -27,6 +27,8 @@ header img {
 
 .thePic{
     width:fit-content;
+    min-width: 350px;
+    max-width:35%;
     max-height:30%;
     max-height:250px;
     border-radius: 10px;
@@ -36,7 +38,7 @@ header img {
     width:30%;
     padding-top: 7%;
     padding-left: 3%;
-    font-size:larger;
+    font-size:125%;
     text-align: left;
 }
 

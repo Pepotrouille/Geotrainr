@@ -189,7 +189,7 @@ function Initialization() {//The function creating the questions from the txt fi
       }
     }
   }
-
+  //console.log(listQuestions)
   //Question Index in countries
 
   
@@ -200,10 +200,11 @@ function Initialization() {//The function creating the questions from the txt fi
   for(let i = 0; i < listQuestions.length; i++)
   {
     k=0;
-    
+    //console.log(listQuestions[i][1])
     for(let j = 0; j < listQuestions[i][1].length; j++)
     {
-      while( listQuestions[i][1][j].toLowerCase() != countries[k][0][0].toLowerCase() && k<clength)
+      //console.log(listQuestions[i][1][j])
+      while(k<clength && listQuestions[i][1][j].toLowerCase() != countries[k][0][0].toLowerCase() )
       {
         k++
       }
@@ -225,20 +226,20 @@ function Initialization() {//The function creating the questions from the txt fi
 
 function InitQuestion() {//To get a random question from the list
   questionIndex = Math.floor(Math.random() * listQuestions.length);
-  LanguageQuestion();
   if (typeof(listQuestions[questionIndex][2])=="undefined")
   {
-    document.getElementById("thePic").src="";
+    document.getElementById("PicAndQuest").innerHTML = '<div id="HTMLQuestion" class="HTMLQuestion">placeholder here</div>'
     document.getElementById("HTMLQuestion").style="text-align:center;";
     console.log("undefined")
   }
   else
   {
     let randPic = listQuestions[questionIndex][2][Math.floor(Math.random() * listQuestions[questionIndex][2].length)];
-    document.getElementById("thePic").src="./images/" + randPic;
+    document.getElementById("PicAndQuest").innerHTML='<img id="thePic", class="thePic" src="./images/' + randPic + '">';
+    document.getElementById("PicAndQuest").innerHTML += '<div id="HTMLQuestion" class="HTMLQuestion">placeholder here</div>'
     document.getElementById("HTMLQuestion").style="text-align:left;";
   }
-  
+  LanguageQuestion();
 }
 
 function LanguageQuestion() {//To set the language from the current question

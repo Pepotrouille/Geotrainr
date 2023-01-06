@@ -14,6 +14,7 @@ Poland
 Sweden
 answer
 picture
+signYellow1.JPG
 picture
 yellowSign
 
@@ -102,7 +103,7 @@ Albania
 Montenegro
 answer
 picture
-rift.JPG
+metaRift1.JPG
 picture
 plateRedStripe
 
@@ -136,7 +137,235 @@ answer
 Switzerland
 Italy
 San Marino
+Slovenia
 answer
 picture
 picture
 languageItalian
+
+yellowMiddleLine
+question
+English
+Which country can have a yellow middle line?
+French
+Quel pays peut avoir une ligne centrale jaune ?
+question
+answer
+Norway
+answer
+picture
+picture
+yellowMiddleLine
+
+aring
+question
+English
+Which country use the following letter : Å?
+French
+Quel pays utilise la lettre suivante : Å ?
+question
+answer
+Denmark
+Aland
+Norway
+Faroe
+answer
+picture
+languageAring1.JPG
+picture
+aring
+
+signredwriting
+question
+English
+Which country can have signs with red writing on it?
+French
+Quel pays peut avoir des panneaux dont l'écriture est en rouge ?
+question
+answer
+Denmark
+answer
+picture
+signRedWriting1.JPG
+picture
+signredwriting
+
+lowcamera
+question
+English
+Which countries have a Google car with a low height camera?
+French
+Quel pays a une Google car avec une caméra basse ?
+question
+answer
+Switzerland
+answer
+picture
+picture
+mowcamera
+
+chevronbgblackwhitearrow
+question
+English
+Which countries have chevrons with black background and white arrow?
+French
+Quel pays peut avoir des chevrons de virages noirs avec une flèche blanche ?
+question
+answer
+Italy
+Spain
+Switzerland
+United Kingdom
+Liechtenstein
+Greece
+Albania
+Malta
+answer
+picture
+chevronsBGBlackWhiteArrow1.JPG
+chevronsBGBlackWhiteArrow2.JPG
+chevronsBGBlackWhiteArrow1.png
+picture
+chevronbgblackwhitearrow
+
+chevronbgbluewhitearrow
+question
+English
+Which countries have chevrons with blue background and white arrow?
+French
+Quel pays peut avoir des chevrons de virages bleus avec une flèche blanche ?
+question
+answer
+France
+Spain
+answer
+picture
+chevronsBGBlueWhiteArrow1.JPG
+chevronsBGBlueWhiteArrow2.JPG
+chevronsBGBlueWhiteArrow1.png
+picture
+chevronbgbluewhitearrow
+
+chevronbgwhiteredarrow
+question
+English
+Which countries have chevrons with white background and red arrow?
+French
+Quel pays peut avoir des chevrons de virages blancs avec une flèche rouge ?
+question
+answer
+Belgium
+Netherlands
+Germany
+Poland
+Denmark
+Croatia
+Slovenia
+Turkey
+Moldova
+Romania
+Lithuania
+Cyprus
+Latvia
+Faroe
+Bulgaria
+North Macedonia
+Czechia
+Slovakia
+Bosnia and Herzegovina
+answer
+picture
+chevronsBGWhiteRedArrow1.JPG
+chevronsBGWhiteRedArrow1.png
+picture
+chevronbgwhiteredarrow
+
+chevronbgblackyellowarrow
+question
+English
+Which countries have chevrons with black background and yellow arrow?
+French
+Quel pays peut avoir des chevrons de virages noirs avec une flèche jaune ?
+question
+answer
+Norway
+Finland
+Ireland
+Aland
+Iceland
+Luxembourg
+Portugal
+answer
+picture
+chevronsBGBlackYellowArrow1.png
+picture
+chevronbgblackyellowarrow
+
+chevronbgredwhitearrow
+question
+English
+Which countries have chevrons with red background and white arrow?
+French
+Quel pays peut avoir des chevrons de virages rouge avec une flèche blanche ?
+question
+answer
+Russia
+Estonia
+Ukraine
+Belarus
+Austria
+Hungary
+answer
+picture
+chevronsBGRedWhiteArrow1.png
+picture
+chevronbgredwhitearrow
+
+chevronbgyellowredarrow
+question
+English
+Which countries have chevrons with yellow background and red arrow?
+French
+Quel pays peut avoir des chevrons de virages jaune avec une flèche rouge ?
+question
+answer
+Austria
+Montenegro
+answer
+picture
+chevronsBGYellowRedArrow1.png
+picture
+chevronbgyellowredarrow
+
+chevronbgwhiteblackarrow
+question
+English
+Which countries have chevrons with white background and black arrow?
+French
+Quel pays peut avoir des chevrons de virages blanc avec une flèche noir ?
+question
+answer
+Serbia
+Montenegro
+Slovenia
+answer
+picture
+chevronsBGWhiteBlackArrow1.png
+chevronsBGWhiteBlackArrow1.JPG
+picture
+chevronbgwhiteblackarrow
+
+chevronbgblueyellowarrow
+question
+English
+Which countries have chevrons with blue background and yellow arrow?
+French
+Quel pays peut avoir des chevrons de virages bleu avec une flèche jaune ?
+question
+answer
+Sweden
+answer
+picture
+chevronsBGBlueYellowArrow1.png
+picture
+chevronbgblueyellowarrow
