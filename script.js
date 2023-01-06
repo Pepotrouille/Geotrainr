@@ -235,7 +235,7 @@ function InitQuestion() {//To get a random question from the list
   else
   {
     let randPic = listQuestions[questionIndex][2][Math.floor(Math.random() * listQuestions[questionIndex][2].length)];
-    document.getElementById("thePic").src="/images/" + randPic;
+    document.getElementById("thePic").src="./images/" + randPic;
     document.getElementById("HTMLQuestion").style="text-align:left;";
   }
   
