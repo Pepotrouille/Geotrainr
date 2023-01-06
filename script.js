@@ -1,128 +1,70 @@
 //Countries and territories (Aland, Gibraltar...) For now only Europe
 
+
 const countries = [
-    "Aland",
-    "Andorra",
-    "Albania",
-    "Armenia",
-    "Austria",
-    "Azerbaijan",
-    "Belarus",
-    "Belgium",
-    "Bosnia and Herzegovina",
-    "Bulgaria",
-    "Croatia",
-    "Cyprus",
-    "Czechia",
-    "Denmark",
-    "Estonia",
-    "Faroe",
-    "Finland",
-    "France",
-    "Georgia",
-    "Germany",
-    "Gibraltar",
-    "Greece",
-    "Guernsey",
-    "Hungary",
-    "Iceland",
-    "Ireland",
-    "Isle of Man",
-    "Italy",
-    "Jersey",
-    "Kosovo",
-    "Latvia",
-    "Liechtenstein",
-    "Lithuania",
-    "Luxembourg",
-    "Malta",
-    "Moldova",
-    "Monaco",
-    "Montenegro",
-    "Netherlands",
-    "North Macedonia",
-    "Norway",
-    "Poland",
-    "Portugal",
-    "Romania",
-    "Russia",
-    "San Marino",
-    "Serbia",
-    "Slovakia",
-    "Slovenia",
-    "Spain",
-    "Sweden",
-    "Switzerland",
-    "Turkey",
-    "Ukraine",
-    "United Kingdom",
-    "Vatican City",
+    [["Aland","Aland"],[]],
+    [["Andorra","Andorre"],[]],
+    [["Albania", "Albanie"],[]],
+    [["Armenia", "Arménie"],[]],
+    [["Austria", "Autriche"],[]],
+    [["Azerbaijan", "Azerbaïdjan"],[]],
+    [["Belarus", "Bélarussie"],[]],
+    [["Belgium", "Belgique"],[]],
+    [["Bosnia and Herzegovina", "Bosnie-Herzégovine"],[]],
+    [["Bulgaria", "Bulgarie"],[]],
+    [["Croatia", "Croatie"],[]],
+    [["Cyprus", "Chypre"],[]],
+    [["Czechia", "Tchéquie"],[]],
+    [["Denmark", "Danemark"],[]],
+    [["Estonia", "Estonie"],[]],
+    [["Faroe", "Féroé"],[]],
+    [["Finland", "Finlande"],[]],
+    [["France", "France"],[]],
+    [["Georgia", "Géorgie"],[]],
+    [["Germany", "Allemagne"],[]],
+    [["Gibraltar", "Gibraltar"],[]],
+    [["Greece", "Grèce"],[]],
+    [["Guernsey", "Guernesey"],[]],
+    [["Hungary", "Hongrie"],[]],
+    [["Iceland", "Islande"],[]],
+    [["Ireland", "Irlande"],[]],
+    [["Isle of Man", "Ile du Man"],[]],
+    [["Italy", "Italie"],[]],
+    [["Jersey", "Jersey"],[]],
+    [["Kosovo", "Kosovo"],[]],
+    [["Latvia", "Lettonie"],[]],
+    [["Liechtenstein", "Liechtenstein"],[]],
+    [["Lithuania", "Lituanie"],[]],
+    [["Luxembourg", "Luxembourg"],[]],
+    [["Malta", "Malte"],[]],
+    [["Moldova", "Moldavie"],[]],
+    [["Monaco", "Monaco"],[]],
+    [["Montenegro", "Monténégro"],[]],
+    [["Netherlands", "Pays-Bas"],[]],
+    [["North Macedonia", "Macédoine du Nord"],[]],
+    [["Norway", "Norvège"],[]],
+    [["Poland", "Pologne"],[]],
+    [["Portugal", "Portugal"],[]],
+    [["Romania", "Roumanie"],[]],
+    [["Russia", "Russie"],[]],
+    [["San Marino", "Saint Marin"],[]],
+    [["Serbia", "Serbie"],[]],
+    [["Slovakia", "Slovaquie"],[]],
+    [["Slovenia", "Slovénie"],[]],
+    [["Spain", "Espagne"],[]],
+    [["Sweden", "Suède"],[]],
+    [["Switzerland", "Suisse"],[]],
+    [["Turkey", "Turquie"],[]],
+    [["Ukraine", "Ukraine"],[]],
+    [["United Kingdom", "Royaume Uni"],[]],
+    [["Vatican City", "Vatican"],[]]
   ];
   
-  const frenchCountries = [
-    "Aland",
-    "Andorre",
-    "Albanie",
-    "Arménie",
-    "Autriche",
-    "Azerbaïdjan",
-    "Bélarussie",
-    "Belgique",
-    "Bosnie-Herzégovine",
-    "Bulgarie",
-    "Croatie",
-    "Chypre",
-    "Tchéquie",
-    "Danemark",
-    "Estonie",
-    "Féroe",
-    "Finlande",
-    "France",
-    "Géorgie",
-    "Allemagne",
-    "Gibraltar",
-    "Grèce",
-    "Guernesey",
-    "Hongrie",
-    "Islande",
-    "Irlande",
-    "Île du Man",
-    "Italie",
-    "Jersey",
-    "Kosovo",
-    "Lettonie",
-    "Liechtenstein",
-    "Lituanie",
-    "Luxembourg",
-    "Malte",
-    "Moldavie",
-    "Monaco",
-    "Monténégro",
-    "Pays-Bas",
-    "Macédoine du Nord",
-    "Norvège",
-    "Pologne",
-    "Portugal",
-    "Roumanie",
-    "Russie",
-    "Saint-Marin",
-    "Serbie",
-    "Slovaquie",
-    "Slovénie",
-    "Espagne",
-    "Suède",
-    "Suisse",
-    "Turquie",
-    "Ukraine",
-    "Royaume Uni",
-    "Vatican",
-  ];
   
   let language = [
     [
       "English",
       "English",
-      countries,
       [
         "Back",
         "New Question",
@@ -135,7 +77,6 @@ const countries = [
     [
       "French",
       "Français",
-      frenchCountries,
       [
         "Retour",
         "Nouvelle Question",
@@ -149,7 +90,7 @@ const countries = [
 
 let listQuestions = [];
 
-let randNumberQ;
+let questionIndex;
 
 let winningList;
 let translatedWinningList;
@@ -175,7 +116,6 @@ document.addEventListener("DOMContentLoaded", function () {
   InitQuestion();
   setMyKeyDownListener();
   InitDropDown();
-
   LanguageMenu(true);
 });
 
@@ -191,6 +131,7 @@ function Initialization() {//The function creating the questions from the txt fi
     let makingTheme /*: boolean*/ = true;
     let makingQuestion /*: number 0, 1 or 2*/ = 0;
     let makingAnswer /*: boolean*/ = false;
+    let makingPicture /*: boolean*/ = false;
 
     //To stop the loop. Replace by return 1 ?
     let weContinue /*: boolean*/ = true;
@@ -218,6 +159,8 @@ function Initialization() {//The function creating the questions from the txt fi
         else weContinue = false;
       } else if (questionRaw.Array[i] == "answer") {
         makingAnswer = !makingAnswer;
+      } else if (questionRaw.Array[i] == "picture") {
+        makingPicture = !makingPicture;
       } else if (makingQuestion == 1) {
         theCurrentLanguage = questionRaw.Array[i];
         makingQuestion = 2;
@@ -235,26 +178,79 @@ function Initialization() {//The function creating the questions from the txt fi
             aNewQuestion[1],
             questionRaw.Array[i]
           );
+      } else if (makingPicture) {
+        if (typeof aNewQuestion[2] == "undefined")
+          aNewQuestion[2] = [questionRaw.Array[i]];
+        else
+          aNewQuestion[2] = AddInSortedList(
+            aNewQuestion[2],
+            questionRaw.Array[i]
+          );
       }
     }
   }
+
+  //Question Index in countries
+
+  
+  let half;
+  let notFound = true;
+  let k;
+  const clength = countries.length;
+  for(let i = 0; i < listQuestions.length; i++)
+  {
+    k=0;
+    
+    for(let j = 0; j < listQuestions[i][1].length; j++)
+    {
+      while( listQuestions[i][1][j].toLowerCase() != countries[k][0][0].toLowerCase() && k<clength)
+      {
+        k++
+      }
+      if(k==clength)
+      {
+        j=listQuestions[i][1].length;
+        console.log("problem with the question "+ listQuestions[i][0][0]);
+      } else if (listQuestions[i][1][j].toLowerCase()==countries[k][0][0].toLowerCase())
+      {
+        countries[k][1].push(i)
+      }
+      
+    }
+  }
+        
+
+
 }
 
 function InitQuestion() {//To get a random question from the list
-  randNumberQ = Math.floor(Math.random() * listQuestions.length);
+  questionIndex = Math.floor(Math.random() * listQuestions.length);
   LanguageQuestion();
+  if (typeof(listQuestions[questionIndex][2])=="undefined")
+  {
+    document.getElementById("thePic").src="";
+    document.getElementById("HTMLQuestion").style="text-align:center;";
+    console.log("undefined")
+  }
+  else
+  {
+    let randPic = listQuestions[questionIndex][2][Math.floor(Math.random() * listQuestions[questionIndex][2].length)];
+    document.getElementById("thePic").src="/images/" + randPic;
+    document.getElementById("HTMLQuestion").style="text-align:left;";
+  }
+  
 }
 
 function LanguageQuestion() {//To set the language from the current question
   let englishQuestion;
   let currentLanguage;
   let missingLanguage = true;
-  winningList = listQuestions[randNumberQ][1];
-  for (let i = 0; i < listQuestions[randNumberQ][0].length; i++) {
-    currentLanguage = listQuestions[randNumberQ][0];
+  winningList = listQuestions[questionIndex][1];
+  for (let i = 0; i < listQuestions[questionIndex][0].length; i++) {
+    currentLanguage = listQuestions[questionIndex][0];
     if (currentLanguage[i][0] == language[currentLanguageIndex][0]) {
       document.getElementById("HTMLQuestion").innerHTML = currentLanguage[i][1];
-      i = listQuestions[randNumberQ][0].length;
+      i = listQuestions[questionIndex][0].length;
       missingLanguage = false;
     } else if (currentLanguage[i][0] == "English") {
       englishQuestion = currentLanguage[i][1];
@@ -289,12 +285,12 @@ function LanguageMenu(Init) {//To switch to the language menu (if Init True, Tra
   if (!Init)
     document.getElementById("theFooter").innerHTML =
       '<button type="button" onclick="Back(false)" id="back">' +
-      language[currentLanguageIndex][3][0] +
+      language[currentLanguageIndex][2][0] +
       "</button>";
   else {
     document.getElementById("main").innerHTML +=
       '<br><br><section><button type="button" onclick="Back(true)" style="width:120px;" id="train">' +
-      language[currentLanguageIndex][3][5] +
+      language[currentLanguageIndex][2][5] +
       "</button></section>";
     document.getElementById("theFooter").innerHTML = "";
   }
@@ -302,19 +298,18 @@ function LanguageMenu(Init) {//To switch to the language menu (if Init True, Tra
 
 function SetLanguage(newIndex, Init) {//Change the language of the game
   currentLanguageIndex = newIndex;
-  console.log(Init);
   if (inLanguageMenu) {
     if (Init)
-      document.getElementById("train").innerHTML = language[newIndex][3][5];
-    else document.getElementById("back").innerHTML = language[newIndex][3][0];
+      document.getElementById("train").innerHTML = language[newIndex][2][5];
+    else document.getElementById("back").innerHTML = language[newIndex][2][0];
   } else {
-    document.getElementById("newQuestion").innerHTML = language[newIndex][3][1];
+    document.getElementById("newQuestion").innerHTML = language[newIndex][2][1];
     document.getElementById("deleteCurrent").innerHTML =
-      language[newIndex][3][2];
+      language[newIndex][2][2];
     document.getElementById("changeLanguage").innerHTML =
-      language[newIndex][3][3];
+      language[newIndex][2][3];
     document.getElementById("validate").innerHTML = 
-      language[newIndex][3][4];
+      language[newIndex][2][4];
     InitDropDown();
     LanguageQuestion();
   }
@@ -322,9 +317,9 @@ function SetLanguage(newIndex, Init) {//Change the language of the game
 
 function InitDropDown() {//The dropdown for the textbox : to write the answer
   document.getElementById("propositions").innerHTML = "";
-  for (let i = 0; i < language[currentLanguageIndex][2].length; i++)
+  for (let i = 0; i < countries.length; i++)
     document.getElementById("propositions").innerHTML +=
-      '<option value="' + language[currentLanguageIndex][2][i] + '">';
+      '<option value="' + countries[i][0][currentLanguageIndex] + '">';
 }
 
 function Restart() {//The New Question Button
@@ -346,11 +341,11 @@ function Enter() {
   let tempValue = "";
 
   let countryIndex = -1;
-  for (let j = 0; j < language[currentLanguageIndex][2].length; j++) {
-    if (language[currentLanguageIndex][2][j].toLowerCase() == theInput.toLowerCase()) countryIndex = j;
+  for (let j = 0; j < countries.length; j++) {
+    if (countries[j][0][currentLanguageIndex].toLowerCase() == theInput.toLowerCase()) countryIndex = j;
   }
   if (countryIndex != -1) {
-    currentList = AddInSortedList(currentList, language[currentLanguageIndex][2][countryIndex]);
+    currentList = AddInSortedList(currentList, countries[countryIndex][0][currentLanguageIndex]);
 
     document.getElementById("playerAnswerList").innerHTML = "";
     for (let i = 0; i < currentList.length; i++) {
@@ -381,11 +376,11 @@ function Validate() {//To print the answers and call Correction()
   document.getElementById("theGoodAnswerList").innerHTML = "";
   translatedWinningList = [];
   let j = 0;
-  for (let i = 0; i < language[currentLanguageIndex][2].length; i++) {
-    if (winningList[j] == language[0][2][i]) {
+  for (let i = 0; i < countries.length; i++) {
+    if (winningList[j] == countries[i][0][0]) {
       translatedWinningList = AddInSortedList(
         translatedWinningList,
-        language[currentLanguageIndex][2][i]
+        countries[i][0][currentLanguageIndex]
       );
       j++;
     }

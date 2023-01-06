@@ -19,10 +19,25 @@ header img {
     padding-right : 38%;
 }
 
+.PicAndQuest {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thePic{
+    width:fit-content;
+    max-height:30%;
+    max-height:250px;
+    border-radius: 10px;
+}
 
 .HTMLQuestion {
-    
+    width:30%;
+    padding-top: 7%;
+    padding-left: 3%;
     font-size:larger;
+    text-align: left;
 }
 
 button{

@@ -13,6 +13,8 @@ North Macedonia
 Poland
 Sweden
 answer
+picture
+picture
 yellowSign
 
 yellowPlateBlueStripe
@@ -25,9 +27,16 @@ question
 answer
 Denmark
 France
+Guernsey
+Ireland
+Jersey
 Luxembourg
 Netherlands
 answer
+picture
+plateYellowOneBlueStripe1.JPG
+plateYellowOneBlueStripe1.png
+picture
 yellowPlateBlueStripe
 
 doubleBlueStripes
@@ -42,6 +51,10 @@ Albania
 France
 Italy
 answer
+picture
+plateWhiteTwoBlueStripes1.JPG
+plateWhiteTwoBlueStripes1.png
+picture
 doubleBlueStripes
 
 plateRedWriting
@@ -54,6 +67,10 @@ question
 answer
 Belgium
 answer
+picture
+plateWhiteOneBlueStripeRedWriting1.JPG
+plateWhiteOneBlueStripeRedWriting1.png
+picture
 plateRedWriting
 
 plateRedStripe
@@ -67,6 +84,10 @@ answer
 Albania
 Isle of Man
 answer
+picture
+plateWhiteOneRedStripe1.JPG
+plateWhiteOneRedStripe1.png
+picture
 plateRedStripe
 
 plateRedStripe
@@ -80,6 +101,9 @@ answer
 Albania
 Montenegro
 answer
+picture
+rift.JPG
+picture
 plateRedStripe
 
 leftDriving
@@ -97,6 +121,8 @@ Malta
 Cyprus
 Ireland
 answer
+picture
+picture
 leftDriving
 
 languageItalian
@@ -111,4 +137,6 @@ Switzerland
 Italy
 San Marino
 answer
+picture
+picture
 languageItalian
